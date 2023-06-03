@@ -363,14 +363,14 @@ z-index: 99;
 
 
 .banner{
-  padding: 40px 0 0 123px;
+  /* padding: 40px 0 0 123px; */
 }
 
-.banner_text {
+/* .banner_text {
   max-width: 570px !important;
   padding-right: 70px;
   margin-bottom: 50px !important;
-}
+} */
 
 .banner_text h1 {
   font-size: 68px;
@@ -420,15 +420,12 @@ z-index: 99;
 }
 
 .banner_img {
-  display: flex;
-  margin-right: -140px;
+  /* display: flex;
+  margin-right: -140px; */
 }
 
-.banner_img .item{
+.banner_img {
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  margin: 0 15px;
-  margin-top: 20px;
 }
 
 .item_text {
@@ -459,10 +456,6 @@ z-index: 99;
   text-align: center;
   width: 150px;
 }
-
-
-
-
 
 
 
@@ -516,15 +509,12 @@ visibility: hidden;
 
 /* ----------------------- service */
 
-#service{
-  height: 520% !important;
-  padding: 70px 20px;
-}
+
 
 
 .wrap {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   height: auto !important;
   /* overflow: hidden; */
   z-index: 1;
@@ -534,21 +524,12 @@ visibility: hidden;
   position: relative;
   width: 100%;
   height: 100vh;
-  padding: 50px;
-  /* padding-top: 130px; */
 }
 
 
-.accord {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: -70px;
-  /* align-items: cent; */
-}
 
 .accord-list {
   position: relative;
-  width: calc(50% - 50px);
   z-index: 2;
 }
 
@@ -640,11 +621,11 @@ visibility: hidden;
 }
 .accordion-img {
   position: absolute;
-  width: 50%;
+  width: 70%;
   height: 70%;
   top: 0;
-  left: 0;
-  background: #151515;
+  right: 0;
+  /* background: #151515; */
   overflow: hidden;
 }
 .accord-img {
