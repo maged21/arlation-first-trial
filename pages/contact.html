@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../images/arlation-logo.png">
+    <title>Arlation</title>
+    <!-- home page css -->
+    <link rel="stylesheet" href="../css/contact.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- gsap -->
+
+
+</head>
+<body>
+    <div>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+              <img src="../images/arlation-logo.png" alt="logo" class="img-fluid ms-5">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link fs-5 fw-bold" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5 fw-bold" href="../pages/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5 fw-bold" href="../pages/portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link fs-5 fw-bold" href="../pages/services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item fs-5 text-capitalize" href="../pages/services.html#game-localization">game localization</a></li>
+                      <li><a class="dropdown-item fs-5 text-capitalize" href="../pages/services.html#text-translation">text translation</a></li>
+                      <li><a class="dropdown-item fs-5 text-capitalize" href="../pages/services.html#subtitling">subtitling</a></li>
+                      <li><a class="dropdown-item fs-5 text-capitalize" href="../pages/services.html#dubbing">dubbing</a></li>
+                      <li><a class="dropdown-item fs-5 text-capitalize" href="../pages/services.html#copywriting">copywriting</a></li>
+                      <li><a class="dropdown-item fs-5 text-capitalize" href="../pages/services.html#interpretation">interpretation</a></li>
+                      <li><a class="dropdown-item fs-5 text-capitalize" href="../pages/services.html#quality-testing">quality control & testing</a></li>
+                      <li><a class="dropdown-item fs-5 text-capitalize" href="../pages/services.html#video-editing">video editing</a></li>
+                      <li><a class="dropdown-item fs-5 text-capitalize" href="../pages/services.html#consultation">consultation</a></li>
+                      <li><a class="dropdown-item fs-5 text-capitalize" href="../pages/services.html#training">training</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5 fw-bold" href="../pages/contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">Arlation</li>
+            <li class="breadcrumb-item  port" aria-current="page">Contact</li>
+          </ol>
+        </nav>
+    
+        <section id="contact">
+          <div class="container">
+            <div class="row pt-5 g-3 mt-5">
+
+              <div class="col-md-6 first_col">
+                <form class="p-4">
+                  <div class="mb-4">
+                    <label for="exampleFormControlInput1" class="form-label text-capitalize">Name</label>
+                    <input type="text" class="form-control py-2" id="exampleFormControlInput1" placeholder="enter your name">
+                  </div>
+                  <div class="mb-4">
+                    <label for="email" class="form-label text-capitalize">Email address</label>
+                    <input type="email" class="form-control py-2" id="email" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-4">
+                    <label for="phone" class="form-label text-capitalize">phone number</label>
+                    <input type="tel" class="form-control py-2" id="phone">
+                  </div>
+                  <div class="mb-4">
+                    <label for="exampleFormControlTextarea1" class="form-label text-capitalize">Enter your message</label>
+                    <textarea class="form-control py-2" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="mb-4">
+                    <label for="formFileMultiple" class="form-label text-capitalize">upload files</label>
+                    <input class="form-control" type="file" id="formFileMultiple" multiple>
+                  </div>
+                  <div class="my-4">
+                    <button class="btn contact-btn text-capitalize  text-white">send now</button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-md-6">
+                <img src="../images/alexey-savchenko-k4Akpt5-Sfk-unsplash.jpg" class="img-fluid contact-img">
+              </div>
+            </div>
+
+          
+          </div>
+        </section>
+
+
+    <!-- footer -->
+    <section id="footer">       
+        <div class="container-fluid  p-5">
+            <div class="row">
+                <div class="col-lg-4 p-3 footer-box">
+                    <img src="../images/arlation-logo.png" alt="demo" class="img-fluid mb-4">
+                    <p>Arlation is a growing service provider in the industry of localization and language</p>
+                    <div class="social-icons d-flex">
+                        <a href="https://www.facebook.com/arlation/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a class="ms-3" href="https://twitter.com/arlation1?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="ms-3" href="https://www.linkedin.com/company/arlation-llc/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                      </div>
+                </div>
+                <div class="col-lg-4 p-3 footer-box">
+                    <p class="fw-bold text-uppercase">find us</p>
+                    <p class="text-capitalize"><i class="fa-solid fa-location-dot me-2"></i>dubai</p>
+                    <p><i class="fa-solid fa-phone me-2"></i>
+                        0097143814208</p>
+                    <p>PO Box: 57594</p>
+                    <hr>
+                    <p class="text-capitalize"><i class="fa-solid fa-location-dot me-2"></i>egypt</p>
+                    <p><i class="fa-solid fa-phone me-2"></i>+20 10 0909 2266</p>
+                    <p><i class="fa-solid fa-envelope me-2"></i>info@arlation.com</p>
+                </div>
+                <div class="col-lg-4 p-3">
+                    <h6 class="fw-bold text-uppercase mb-3">about</h6>
+                    <a class="text-capitalize text-white" href="../pages/privacy-policy.html">privacy policy</a>
+                    <div class="row certficate-footer">
+                        <div class="col-lg-3">
+                            <img src="../images/certificates/isi27001-150x150-1.png" class="img-fluid">
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="../images/certificates/isi27001-150x150-1.png" class="img-fluid">
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="../images/certificates/isi27001-150x150-1.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-capitalize mb-0 text-center p-2">2023 © Arlation All rights reserved</p>
+        </div>
+    </section>
+
+    
+    
+    
+    </div>
+        <!-- script -->
+        
+        <!-- bootstrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <!-- icons -->
+        <script src="https://kit.fontawesome.com/a72b18742e.js" crossorigin="anonymous"></script>
+</body>
+</html>
