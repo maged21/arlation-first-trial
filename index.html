@@ -6,481 +6,294 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
     <link rel="icon" type="image/png" href="images/arlation-logo.png">
-    <title>Arlation</title>
+    <title>Arlation Media Services</title>
     <!-- home page css -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- aos css -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
 </head>
 <body>
+    
+    <!-- scroll to top -->
+    <span class="up"><i class="fa-solid fa-chevron-up"></i></span>
 
 
-    <div>
-
-        <!-- scroll to top -->
-        <span class="up"><i class="fa-solid fa-chevron-up"></i></span>
+    <div class="scroll-container">
 
         <!-- header -->
-        <section id="header">
-            <section class="video-section">
-                <video autoplay muted loop>
-                  <source src="images/hero.mp4" type="video/mp4">
-                </video>
-              </section>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
+        <div class="scroll-area text-white">
+            <section id="header">
+                <section class="video-section">
+                    <video autoplay muted loop>
+                      <source src="images/hero4.mp4" type="video/mp4">
+                    </video>
+                  </section>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                      <a class="navbar-brand" href="index.html">
+                        <img src="images/arlation-logo.png" alt="logo" class="img-fluid w-50 ms-2">
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars fs-1"></i>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link fs-6 fw-bold" href="pages/about.html">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link fs-6 fw-bold" href="pages/portfolio.html">Our Portfolio</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link fs-6 fw-bold" href="pages/services.html" type="button" data-bs-toggle="" aria-expanded="true">
+                             Services
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#game-localization">game localization</a></li>
+                              <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#text-translation">text translation</a></li>
+                              <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#subtitling">subtitling</a></li>
+                              <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#dubbing">dubbing</a></li>
+                              <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#copywriting">copywriting</a></li>
+                              <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#interpretation">interpretation</a></li>
+                              <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#quality-testing">quality control & testing</a></li>
+                              <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#video-editing">video editing</a></li>
+                              <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#consultation">consultation</a></li>
+                              <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#training">training</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link fs-6 fw-bold" href="pages/contact.html">Contact Us</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+    
+              
+            <!-- second navbar -->
+    
+            <div class="navbartwo">
+                <div class="site-logo text-white">
                     <img src="images/arlation-logo.png" alt="logo" class="img-fluid w-50 ms-5">
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link fs-5 fw-bold" href="pages/about.html">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link fs-5 fw-bold" href="pages/portfolio.html">Portfolio</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link fs-5 fw-bold" href="pages/services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Services
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#game-localization">game localization</a></li>
-                          <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#text-translation">text translation</a></li>
-                          <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#subtitling">subtitling</a></li>
-                          <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#dubbing">dubbing</a></li>
-                          <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#copywriting">copywriting</a></li>
-                          <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#interpretation">interpretation</a></li>
-                          <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#quality-testing">quality control & testing</a></li>
-                          <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#video-editing">video editing</a></li>
-                          <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#consultation">consultation</a></li>
-                          <li><a class="dropdown-item fs-5 text-capitalize" href="pages/services.html#training">training</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link fs-5 fw-bold" href="pages/contact.html">Contact Us</a>
-                      </li>
-                    </ul>
-                  </div>
                 </div>
-              </nav>
-
-          
-        <!-- second navbar -->
-
-        <div class="navbartwo">
-            <div class="site-logo text-white">
-                <img src="images/arlation-logo.png" alt="logo" class="img-fluid w-50 ms-5">
-            </div>
-            <div class="menu-toggle">
-                <div id="menu-toggle-btn">
-                    <span></span>
-                </div>
-            </div>
-        </div>
-        <div id="navtwo-container">
-            <div class="navtwo">
-                <div class="nvtwo d-flex justify-content-center       align-items-lg-start flex-column">
-                    <div class="navtwo-logo text-white">Arlation</div>
-                    <div class="navtwo-socials">
-                        <a class="me-2 text-white" href="https://www.facebook.com/arlation/" target="_blank">Facebook</a>
-                        <a class="me-2 text-white" href="https://twitter.com/arlation1?lang=en" target="_blank">Twitter</a>
-                        <a class="me-2 text-white" href="https://www.linkedin.com/company/arlation-llc/" target="_blank">LinkedIn</a>
-                        <a class="me-2 text-white" href="https://www.instagram.com/arlationdmcc/" target="_blank">Instagram</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="navtwo-link">
-                        <a href="pages/about.html">About</a>
-                        <div class="navtwo-item-wrapper"></div>
-                    </div>
-                    <div class="navtwo-link">
-                        <a href="pages/portfolio.html">Portfolio</a>
-                        <div class="navtwo-item-wrapper"></div>
-                    </div>
-                    <div class="navtwo-link">
-                        <a href="pages/services.html">Service</a>
-                        <div class="navtwo-item-wrapper"></div>
-                    </div>
-                    <div class="navtwo-link">
-                        <a href="pages/contact.html">Contact</a>
-                        <div class="navtwo-item-wrapper"></div>
+                <div class="menu-toggle">
+                    <div id="menu-toggle-btn">
+                        <span></span>
                     </div>
                 </div>
             </div>
-            <div class="nav-footer">
-                <div class="navtwo-footer-links  d-flex justify-content-between">
-                    <a href="pages/privacy-policy.html">Privacy Policy</a>
-                    <a href="">info@arlation.com</a>
+            <div id="navtwo-container">
+                <div class="navtwo">
+                    <div class="nvtwo d-flex justify-content-center       align-items-lg-start flex-column">
+                        <div class="navtwo-logo text-white">Arlation</div>
+                        <div class="navtwo-socials">
+                            <a class="me-2 text-white" href="https://www.facebook.com/arlation/" target="_blank">Facebook</a>
+                            <a class="me-2 text-white" href="https://twitter.com/arlation1?lang=en" target="_blank">Twitter</a>
+                            <a class="me-2 text-white" href="https://www.linkedin.com/company/arlation-llc/" target="_blank">LinkedIn</a>
+                            <a class="me-2 text-white" href="https://www.instagram.com/arlationdmcc/" target="_blank">Instagram</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="navtwo-link">
+                            <a href="pages/about.html">About</a>
+                            <div class="navtwo-item-wrapper"></div>
+                        </div>
+                        <div class="navtwo-link">
+                            <a href="pages/portfolio.html">Portfolio</a>
+                            <div class="navtwo-item-wrapper"></div>
+                        </div>
+                        <div class="navtwo-link">
+                            <a href="pages/services.html">Service</a>
+                            <div class="navtwo-item-wrapper"></div>
+                        </div>
+                        <div class="navtwo-link">
+                            <a href="pages/contact.html">Contact</a>
+                            <div class="navtwo-item-wrapper"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="nav-footer">
+                    <div class="navtwo-footer-links  d-flex justify-content-between">
+                        <a href="pages/privacy-policy.html">Privacy Policy</a>
+                        <a href="">info@arlation.com</a>
+                    </div>
+                </div>
+            </div> 
+    
+    
+    
+            <!-- hero -->
+    
+    
+            <section id="hero">
+                <div class="container">
+                    <div class="hero-section text-center">
+                        <h1 class="text-white text-uppercase head-text">arlation</h1>
+                        <p class="text-white head-p">From Worlds Apart to United in Arabic</p>
+                        <div class="btn_group">
+                            <a href="index.html#about-us" class="primary"><span>Discover</span></a>
+                        </div>
+                    </div>
+                </div>
+    
+    
+            </section>
+    
+    
+    
+            </section>
         </div>
 
 
-
-        <!-- hero -->
-
-
-        <section id="hero">
-            <div class="container pt-5">
-                <div class="row pt-4">
-                    <div class="col-lg-6">
-                        <div class="banner_text">
-                            <h1 class="text-white text-uppercase">arlation</h1>
-                            <p class="text-white">It's simple, we are the masters of the second most difficult language in the world; Arabic.</p>
-                            <div class="btn_group">
-                                <a href="index.html#about-us" class="primary"><span>Discover</span></a>
-                                <a href="pages/contact.html" class="secondary"><span>Contact</span></a>
-                            </div>
-                        </div>
-                        <div class="banner_counter mt-5">
-                            <div class="block_wrap">
-                                <div class="block">
-                                    <h3 class="text-white"><span class="counter">120</span>k+</h3>
-                                    <p class="text-white text-capitalize fw-bolder">hours subtitling</p>
-                                </div>
-                                <div class="block me-2">
-                                    <h3 class="text-white"><span class="counter">150</span></h3>
-                                    <p class="text-white text-capitalize fw-bolder">titles game localization</p>
-                                </div>
-                                <div class="block me-2">
-                                    <h3 class="text-white"><span class="counter">1000</span></h3>
-                                    <p class="text-white text-capitalize fw-bolder">vo recorded hours</p>
-                                </div>
-                                <div class="block me-2">
-                                    <h3 class="text-white"><span class="counter">50</span>M+</h3>
-                                    <p class="text-white text-capitalize fw-bolder">translated words</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="row">
-                            <div class="col-lg-6 banner_img">
-                                <div class="img_group">
-                                    <img src="images/services/game-tester.jpg" alt="">
-                                    <img src="images/services/game-localization.png" alt="">
-                                    <img src="images/lekoarts-CIO4YMGnVx4-unsplash.jpg" alt="">
-                                </div>
-                                <div class="item_text">
-                                    <div class="item_text_left">
-                                        <p class="text-white text-capitalize fw-bold fs-4">game localization</p>
-                                        <!-- <h5 class="text-white">Butterfly Linear Art</h5> -->
-                                    </div>
-                                    <div class="item_text_right">
-                                        <a href="pages/services.html"><i class="fa-solid fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-            
-                            <div class="col-lg-6 banner_img">
-                                <div class="img_group">
-                                    <img src="images/services/dubbing.jpg" alt="">
-                                    <img src="images/Black Blue and Gold Modern Desktop Wallpaper (8).png" alt="">
-                                    <img src="images/Black Blue and Gold Modern Desktop Wallpaper (9).png" alt="">
-                                </div>
-                                <div class="item_text">
-                                    <div class="item_text_left">
-                                        <p class="text-white">Milad Fakurian</p>
-                                        <h5 class="text-white">Butterfly Linear Art</h5>
-                                    </div>
-                                    <div class="item_text_right">
-                                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
-        </section>
-
-
-
-        </section>
-
-        <!-- about -->
-        <section id="about-us" class="py-5">
-            <div class="container">
-                <div class="section-title text-center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
-                    <h1 class="text-capitalize text-white">about <span>us</span></h1>
-                </div>
-                <div class="row about-section d-flex align-items-center">
+        <!-- about-us -->
+        <section id="about-us">
+            <div class="container scroll-area text-white d-flex align-items-center justify-content-center about-us">
+                <div class="row justify-content-between">
                     <div class="col-lg-6 about-text">
-                        <h1 class="text-uppercase" data-aos="fade-down"><span>who</span> we are</h1>
-                        <ul data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine">
-                            <li>Arlation is a growing service provider in the industry of localization and language.</li>
-                            <li>We offer every one of our partners state-of-the-art visual and audio communication solutions.</li>
-                            <li>Our team of avid game enthusiasts, knowledgeable translators, experienced proofreaders, <br> talented video editors and creative artists, make sure that adaptation to cultural norms enhances the fun of video gaming in each local market.</li>
+                    <div class="icon-holder position-relative">
+                        <h1 class="about-head text-uppercase"><span>who</span> <br> we are</h1>
+                        <i class="fa-solid fa-tv fa-3x position-absolute bottom-0 icon"></i>
+                    </div>
+                        <ul class="ps-0">
+                            <li class="mb-3">Arlation is a growing service provider in the industry of localization and language.</li>
+                            <li class="mb-3">We offer every one of our partners state-of-the-art visual and audio communication solutions.</li>
+                            <li>Our team of avid game enthusiasts, knowledgeable translators, experienced proofreaders.</li>
+                        </ul>
+                        <div class="sec_btn">
+                            <a href="pages/about.html"><span>Explore More</span></a>
+                        </div>
                         
-                        </ul>
                     </div>
-                    <div class="col-lg-6 about-img" data-aos="fade-left"  data-aos-duration="1000">
-                        <img src="images/bg2.jpg" class="img-fluid">
+                    <div class="col-lg-5">
+                        <div class="row about-img g-3">
+                        
+                            <div class="col-6 text-end">
+                                <img src="images/people/copywriting.jpg" alt="about1" class="img-fluid rounded w-75 wow zoomIn">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img src="images/people/game-localization.jpg" alt="about2" class="img-fluid rounded w-100 wow zoomIn">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img src="images/people/dubbing.jpg" alt="about3" class="img-fluid rounded w-50 wow zoomIn">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img src="images/people/quality-control-testing.jpg" alt="about4" class="img-fluid rounded w-75 wow zoomIn">
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row d-flex flex-row-reverse about-section  align-items-center">
-                    <div class="col-lg-6 about-text two">
-                        <h1 class="text-uppercase" data-aos="fade-down"><span>why</span> choose us</h1>
-                        <ul data-aos="fade-left"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine">
-                            <li>It's simple, we are the masters of the second most difficult language in the world; Arabic. With our in-house efficient team's “call of duty” on uncompromising and exceptional quality. </li>
-                            <li>Through our automated workflow, result-oriented procedures and policies, functionality validations and quality assurance, your projects are guaranteed to be delivered on time, on budget, with superior quality.</li>
-                            <li>Cutting-edge technology, commitment to timelines, and years of comprehensive experience in the gaming and translation industry, you are guaranteed a first class product.</li>
-
-                        </ul>
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-right"  data-aos-duration="1000">
-                        <img src="images/bg3.jpg" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row about-section d-flex align-items-center">
-                    <div class="col-lg-6 about-text three">
-                        <h1 class="text-uppercase" data-aos="fade-down"><span>awards</span> winning games</h1>
-                        <ul data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine">
-                            <li>As two famous Arabic websites, Saudigamer and True-gaming announce every year winners of best Arabic game localization, we have been proudly on the list of nominees and winners since 2016.</li>
-                            <li>Due to non-disclosure agreements we have with our clients, we can't disclose all names of our projects but in 2020, our translation Assassin's creed Valhalla was the winner as per Saudi gamer.com</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-left"  data-aos-duration="1000">
-                        <img src="images/gamebg.jpg" class="img-fluid">
-                    </div>
-                </div>
-            </div>
+                </div>   
+        </div>
         </section>
 
-        <!-- portfolio -->
-        <section id="portfolio" class="py-5">
-            <div class="section-title text-center"  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                <h1 class="text-capitalize text-white">portfol<span>io</span></h1>
-            </div>
-            <div class="row d-flex justify-content-center align-items-center p-5 my-5 h-100 canvas-wrapper">
-                <div class="col-lg-4">
-                    <div class="canvas"  data-aos="zoom-in">
-                        <div class="canvas_border">
-                            <svg>
-                                <defs>
-                                    <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" style="stop-color:#2fbced;stop-opacity:1"></stop>
-                                        <stop offset="100%" style="stop-color:rgb(153,75,23);stop-opacity:1"></stop>
-                                    </linearGradient>
-                                    <linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" stop-color="#D34F48"></stop>
-                                        <stop offset="100%" stop-color="#772522"></stop>
-                                    </linearGradient>
-                                </defs>
-                                <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
-                            </svg>
-                        </div>
-                        <div class="canvas_img-wrapper">
-                            <img class="canvas_img" src="images/portfolio/assassin's-creed.png" alt="">
-                        </div>
-                        <div class="canvas_copy">
-                            <span class="canvas_copy_subtitle text-capitalize">epic games</span>
-                            <strong class="canvas_copy_title text-white">Assassin's</strong>
-                            <strong class="canvas_copy_title">Creed</strong>
-                            <span class="canvas_copy_details">Mirage</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="canvas"  data-aos="zoom-in">
-                        <div class="canvas_border">
-                            <svg>
-                                <defs>
-                                    <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" style="stop-color:rgb(253,137,68);stop-opacity:1"></stop>
-                                        <stop offset="100%" style="stop-color:rgb(153,75,23);stop-opacity:1"></stop>
-                                    </linearGradient>
-                                    <linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" stop-color="#D34F48"></stop>
-                                        <stop offset="100%" stop-color="#772522"></stop>
-                                    </linearGradient>
-                                </defs>
-                                <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
-                            </svg>
-                        </div>
-                        <div class="canvas_img-wrapper">
-                            <img class="canvas_img" src="images/portfolio/HFR-keyart.png" alt="">
-                        </div>
-                        <div class="canvas_copy">
-                            <span class="canvas_copy_subtitle">epic games</span>
-                            <strong class="canvas_copy_title">hi-fi</strong>
-                            <strong class="canvas_copy_title">rush</strong>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="canvas"  data-aos="zoom-in">
-                        <div class="canvas_border">
-                            <svg>
-                                <defs>
-                                    <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" style="stop-color:rgb(253,137,68);stop-opacity:1"></stop>
-                                        <stop offset="100%" style="stop-color:rgb(153,75,23);stop-opacity:1"></stop>
-                                    </linearGradient>
-                                    <linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" stop-color="#D34F48"></stop>
-                                        <stop offset="100%" stop-color="#772522"></stop>
-                                    </linearGradient>
-                                </defs>
-                                <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
-                            </svg>
-                        </div>
-                        <div class="canvas_img-wrapper">
-                            <img class="canvas_img" src="images/portfolio/watch-dogs.png" alt="">
-                        </div>
-                        <div class="canvas_copy">
-                            <span class="canvas_copy_subtitle">Ubisoft</span>
-                            <strong class="canvas_copy_title">Watch</strong>
-                            <strong class="canvas_copy_title">Dogs</strong>
-                            <span class="canvas_copy_details">Legion</span>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
-            <div class="row d-flex justify-content-center align-items-center p-5 my-5 h-100 canvas-wrapper">
-                <div class="col-lg-4">
-                    <div class="canvas"  data-aos="zoom-in">
-                        <div class="canvas_border">
-                            <svg>
-                                <defs>
-                                    <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" style="stop-color:#2fbced;stop-opacity:1"></stop>
-                                        <stop offset="100%" style="stop-color:rgb(153,75,23);stop-opacity:1"></stop>
-                                    </linearGradient>
-                                    <linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" stop-color="#D34F48"></stop>
-                                        <stop offset="100%" stop-color="#772522"></stop>
-                                    </linearGradient>
-                                </defs>
-                                <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
-                            </svg>
+        <!-- about-us second-section -->
+        <section class="about-ustwo">
+            <div class="container scroll-area text-white d-flex align-items-center justify-content-center">
+                <div class="row flex-row-reverse justify-content-between">
+                    <div class="col-lg-6 about-text  text-end">
+                        <div class="icon-holder position-relative">
+                            <h1 class="about-head text-uppercase"><span>why</span> <br> choose us</h1>
+                            <i class="fa-solid fa-tv fa-3x position-absolute bottom-0 icon"></i>
                         </div>
-                        <div class="canvas_img-wrapper">
-                            <img class="canvas_img" src="images/portfolio/far-cry-6.png" alt="">
+                        <ul class="ps-0">
+                            <li class="mb-3">It's simple, we are the masters of the second most difficult language in the world; Arabic. </li>
+                            <li class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, id!</li>
+                        </ul>
+                       <div class="row  counter-box">
+                        <div class="col-lg-3">
+                            <div class="rounded p-1 text-center">
+                                <div class="rounded py-3">
+                                    <h4><span class="counter">150</span>K+</h4>
+                                    <p class="fs-5 text-uppercase"> <span class="blue">game</span> <br> titles </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="canvas_copy">
-                            <span class="canvas_copy_subtitle">epic games</span>
-                            <strong class="canvas_copy_title text-white">far</strong>
-                            <strong class="canvas_copy_title">cry</strong>
-                            <span class="canvas_copy_details">six</span>
+                        <div class="col-lg-3">
+                            <div class="rounded p-1 text-center">
+                                <div class="rounded py-3">
+                                    <h4><span class="counter">1000</span>K+</h4>
+                                    <p class="fs-5 text-uppercase"> <span class="blue">recorded</span> <br> hours</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="rounded p-1 text-center">
+                                <div class="rounded py-3">
+                                    <h4><span class="counter">50</span>M+</h4>
+                                    <p class="fs-5 text-uppercase"> <span class="blue">Translated</span> <br> Words</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="rounded p-1 text-center">
+                                <div class="rounded py-3">
+                                    <h4><span class="counter">120</span>K+</h4>
+                                    <p class="fs-5 text-uppercase"> <span class="blue">hours</span> <br> subtitling</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="nametwo">zation</div> -->
+                       </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="row g-3 about-img">
+                        
+                            <div class="col-6 text-end">
+                                <img src="images/contact-us.png" alt="about1" class="img-fluid rounded w-75 wow zoomIn mt-5">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img src="images/bg4.jpg" alt="about2" class="img-fluid rounded w-100 wow zoomIn">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img src="images/b.jpg" alt="about3" class="img-fluid rounded w-50 wow zoomIn">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img src="images/bg1.png" alt="about4" class="img-fluid rounded w-75 wow zoomIn">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="canvas"  data-aos="zoom-in">
-                        <div class="canvas_border">
-                            <svg>
-                                <defs>
-                                    <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" style="stop-color:rgb(253,137,68);stop-opacity:1"></stop>
-                                        <stop offset="100%" style="stop-color:rgb(153,75,23);stop-opacity:1"></stop>
-                                    </linearGradient>
-                                    <linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" stop-color="#D34F48"></stop>
-                                        <stop offset="100%" stop-color="#772522"></stop>
-                                    </linearGradient>
-                                </defs>
-                                <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
-                            </svg>
-                        </div>
-                        <div class="canvas_img-wrapper">
-                            <img class="canvas_img" src="images/portfolio/immortals-fenyx.png" alt="">
-                        </div>
-                        <div class="canvas_copy">
-                            <span class="canvas_copy_subtitle">Ubisoft</span>
-                            <strong class="canvas_copy_title">immortals</strong>
-                            <strong class="canvas_copy_title">fenyx</strong>
-                            <span class="canvas_copy_details">Rising</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="canvas"  data-aos="zoom-in">
-                        <div class="canvas_border">
-                            <svg>
-                                <defs>
-                                    <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" style="stop-color:rgb(253,137,68);stop-opacity:1"></stop>
-                                        <stop offset="100%" style="stop-color:rgb(153,75,23);stop-opacity:1"></stop>
-                                    </linearGradient>
-                                    <linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" stop-color="#D34F48"></stop>
-                                        <stop offset="100%" stop-color="#772522"></stop>
-                                    </linearGradient>
-                                </defs>
-                                <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
-                            </svg>
-                        </div>
-                        <div class="canvas_img-wrapper">
-                            <img class="canvas_img" src="images/portfolio/death-loop.jpg" alt="">
-                        </div>
-                        <div class="canvas_copy">
-                            <span class="canvas_copy_subtitle">epic games</span>
-                            <strong class="canvas_copy_title">death</strong>
-                            <strong class="canvas_copy_title">loop</strong>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="portfolio-button text-center">
-                <button class="port-btn text-center">
-                   <a class="button-text" href="pages/portfolio.html">View More</a>
-                </button>
-            </div>
+        </div>
         </section>
 
-        <!-- service -->
-        <section id="service">
-            <div class="section-title text-center"  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                <h1 class="text-capitalize text-white"><span>s</span>ervices</h1>
-            </div>
-            <div class="wrap">
 
-                <div class="container section">
+        <!-- services section -->
+        <div class="scroll-area container text-dark bg-white  btn-ser d-flex align-items-center justify-content-center service">
+            <div class="service-title text-center mt-3">
+                
+            </div>
+            <div class="wrap pt-5">
+
+                <div class="section">
                     
-                    <div class="row">
-
-                        <div class="col-lg-6 accordion-img">
+                    <div class="row justify-content-between">
+                        <h2 class="sec-title text-center mb-5">Our Services</h2>
+                        <div class="col-lg-5 accordion-img">
                             <img id="1-img" src="images/services/game-localization.png" alt="1" class="accord-img active">
                             <img id="2-img" src="images/services/text-translation.jpg" alt="2" class="accord-img">
                             <img id="3-img" src="images/services/subtitle.jpeg" alt="3" class="accord-img">
                             <img id="4-img" src="images/services/dubbing.jpg" alt="4" class="accord-img">
                             <img id="5-img" src="images/services/copywriting.png" alt="5" class="accord-img">
                             <img id="6-img" src="images/services/interpretation.png" alt="6" class="accord-img">
-                            <img id="7-img" src="images/services/game-tester.jpg" alt="7" class="accord-img">
-                            <img id="8-img" src="images/services/video-editing.jpg" alt="8" class="accord-img">
-                            <img id="9-img" src="images/services/consultation.jpg" alt="9" class="accord-img">
-                            <img id="10-img" src="images/services/training.png" alt="10" class="accord-img">
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-5">
                             <div class="accord">
                                 <ul class="accord-list">
                                     <li class="accord-item active" data-id="1" data-aos="fade-up"
@@ -495,7 +308,7 @@
                                         </h3>
                                         <div class="accord-body">
                                             <p class="accord-discript">
-                                                At Arlation, we believe that it is imperative to provide accurate, consistent, clear and fun translations that conform to the cultural norms and nuances of each local market, all while maintaining the soul of the game.
+                                                At Arlation, we believe that it is imperative to provide accurate, consistent, clear and fun translations that conform to the cultural norms and nuances of each local market
                                             </p>
                                         </div>
                                     </li>
@@ -512,6 +325,7 @@
                                         <div class="accord-body">
                                             <p class="accord-discript">
                                                 Being native speakers and experts, cultural adaptation and appropriateness is rendered great attention.
+                                                Lorem ipsum dolor sit amet.
                                             </p>
                                         </div>
                                     </li>
@@ -543,7 +357,7 @@
                                         </h3>
                                         <div class="accord-body">
                                             <p class="accord-discript">
-                                                Our services exceed execution to advise and guide on selecting the most appropriate and authentic accent for the market depending on the content whether Modern Standard Arabic, Egyptian Arabic, Syrian Arabic, Lebanese Arabic or even Classical Arabic.
+                                                Our services exceed execution to advise and guide on selecting the most appropriate and authentic accent for the market depending on the content whether Modern Standard Arabic,
                                             </p>
                                         </div>
                                     </li>
@@ -559,7 +373,7 @@
                                         </h3>
                                         <div class="accord-body">
                                             <p class="accord-discript">
-                                                An organization is capable of achieving higher consumer commitment, increasing potential growth, and leveraging on brand awareness and loyalty when communicating with relevant, useful and compelling content.
+                                                An organization is capable of achieving higher consumer commitment, increasing potential growth, and leveraging on brand awareness and loyalty when communicating with 
                                             </p>
                                         </div>
                                     </li>
@@ -575,216 +389,289 @@
                                         </h3>
                                         <div class="accord-body">
                                             <p class="accord-discript">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio culpa quibusdam id necessitatibus cumque, magnam nostrum accusantium in doloremque officiis officia laborum quaerat impedit exercitationem animi eius aperiam earum velit.
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="accord-item" data-id="7" data-aos="fade-up"
-                                    data-aos-anchor-placement="top-bottom" data-aos-duration="1400">
-                                    
-                                        <h3 class="accord-header">
-                                            <span class="accord-bl">
-                                                <span class="accord-bl-line"></span>
-                                                <span class="accord-bl-line"></span>
-                                            </span>
-                                            <span class="accord-title">Quality Control And Testing</span>
-                                        </h3>
-                                        <div class="accord-body">
-                                            <p class="accord-discript">
-                                                At Arlation, we take pride in being guardians of quality, not only at the last step, but throughout the localization process.
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="accord-item" data-id="8" data-aos="fade-up"
-                                    data-aos-anchor-placement="top-bottom" data-aos-duration="1600">
-                                    
-                                        <h3 class="accord-header">
-                                            <span class="accord-bl">
-                                                <span class="accord-bl-line"></span>
-                                                <span class="accord-bl-line"></span>
-                                            </span>
-                                            <span class="accord-title">Video Editing</span>
-                                        </h3>
-                                        <div class="accord-body">
-                                            <p class="accord-discript">
-                                                From the point of view that a single image can say a lot, Arlation offers you video editing because we are Convinced that we can make your scene more vivid.
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="accord-item" data-id="9" data-aos="fade-up"
-                                    data-aos-anchor-placement="top-bottom" data-aos-duration="1800">
-                                    
-                                        <h3 class="accord-header">
-                                            <span class="accord-bl">
-                                                <span class="accord-bl-line"></span>
-                                                <span class="accord-bl-line"></span>
-                                            </span>
-                                            <span class="accord-title">Consultation</span>
-                                        </h3>
-                                        <div class="accord-body">
-                                            <p class="accord-discript">
-                                                Our experience goes beyond that to include offering advice on commissioning translation, recruiting and training translators and talents, streamlining guidelines, processes and procedures, and administrative, legal and financial advice pertaining to the industry.
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="accord-item" data-id="10" data-aos="fade-up"
-                                    data-aos-anchor-placement="top-bottom" data-aos-duration="1900">
-                                    
-                                        <h3 class="accord-header">
-                                            <span class="accord-bl">
-                                                <span class="accord-bl-line"></span>
-                                                <span class="accord-bl-line"></span>
-                                            </span>
-                                            <span class="accord-title">Training</span>
-                                        </h3>
-                                        <div class="accord-body">
-                                            <p class="accord-discript">
-                                                Our courses are administered at Arlation's in-house fully-equipped center or at the organization's premises, to ensure that you receive a comprehensive, customized, cost effective training in an environment that fosters progressive learning.
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio culpa quibusdam id necessitatibus cumque, magnam nostrum accusantium in doloremque officiis officia laborum 
                                             </p>
                                         </div>
                                     </li>
                                 </ul>
+
+                                <div class="sec_btn-ser">
+                                    <a href="pages/services.html"><span>Explore More</span></a>
+                                </div>
                             </div>
+                            
                         </div>
                     
-                    </div>                    
+                    </div>  
+                    
+
                 </div>
+
             
-                <span class="cursor">
-                    <div class="cursor-dot"></div>
-                </span>
             
             </div>
 
-        </section>
+        </div>
 
-
-        <!-- clients -->
-        <section id="client" class="py-5">
-            <div class="client-title text-center"  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
-                <h1 class="text-capitalize text-dark"><span>our</span> clients</h1>
+        <!-- portfolio section -->
+        <div class="scroll-area container-fluid text-white d-flex align-items-center justify-content-center portfolio">
+            <div class="text-center port-title">
+               
             </div>
-            <div class="container-fluid py-5">
-                <div class="clients py-5">
-                    <div class="clients-slide">
-                        <img class="img-fluid" src="images/clients/activision.png">
-                        <img class="img-fluid capcom" src="images/clients/capcom.png">
-                        <img class="img-fluid" src="images/clients/ea.png">
-                        <img class="img-fluid" src="images/clients/epic-games.png">
-                        <img class="img-fluid square" src="images/clients/square-enix.png">
-                        <img class="img-fluid" src="images/clients/steam.png">
-                        <img class="img-fluid" src="images/clients/ubisoft.png">
+            <div class="portfolio-slider">
+                <h2 class="sec-title text-capitalize text-center mb-5">our showcase</h2>
+                <div class="slider-wrapper-port mt-5">
+                    <div class="slider-item-port">
+                        <figure>
+                            <img src="images/portfolio/ac-mirage.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="slider-item-port">
+                        <figure>
+                            <img src="images/portfolio/resident-evil-4-home.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="slider-item-port">
+                        <figure>
+                            <img src="images/portfolio/far-cry-6-home.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="slider-item-port">
+                        <figure>
+                            <img src="images/portfolio/ghost-wire-home.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="slider-item-port">
+                        <figure>
+                            <img src="images/portfolio/death-loop-home.jpg" alt="">
+                        </figure>
                     </div>
                 </div>
-            </div>
-        </section>
-
-
-        <!-- footer -->
-        <section id="footer">       
-            <div class="container-fluid  p-5">
                 <div class="row">
-                    <div class="col-lg-4 p-3 footer-box"  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
-                        <img src="images/arlation-logo.png" alt="demo" class="img-fluid mb-4">
-                        <p>Arlation is a growing service provider in the industry of localization and language</p>
-                        <div class="social-icons d-flex">
-                            <a href="https://www.facebook.com/arlation/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            <a class="ms-3" href="https://twitter.com/arlation1?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                            <a class="ms-3" href="https://www.linkedin.com/company/arlation-llc/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                            <a class="ms-3" href="https://www.instagram.com/arlationdmcc/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                          </div>
+                    <div class="col text-center">
+                        <div class="slider-progress mx-auto">
+                            <div class="slider-progress-bar"></div>
+                        </div>
+                        <div class="sec_btn">
+                            <a href="pages/services.html"><span>Explore More</span></a>
+                        </div>
                     </div>
-                    <div class="col-lg-4 p-3 footer-box">
-                        <p class="fw-bold text-uppercase"><i class="bi bi-geo-fill fs-5"></i></p>
-                        <p class="text-capitalize"><i class="fa-solid fa-location-dot me-2"></i>dubai</p>
-                        <p><i class="fa-solid fa-phone me-2"></i>
-                            0097143814208</p>
-                        <p><i class="bi bi-mailbox2 me-2 fs-6"></i> 57594</p>
-                        <hr class="w-75">
-                        <p class="text-capitalize"><i class="fa-solid fa-location-dot me-2"></i>egypt</p>
-                        <p><i class="fa-solid fa-phone me-2"></i>+20 10 0909 2266</p>
-                        <p><i class="fa-solid fa-envelope me-2"></i>info@arlation.com</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- blog -->
+        <div class="scroll-area text-white container-fluid d-flex align-items-center justify-content-center py-5" id="blog">
+            <div class="row py-4 justify-content-around">
+                <h2 class="sec-title text-capitalize text-center mt-5 mb-4">our latest news</h2>
+                <div class="col-lg-8 col-sm-8">       
+                    <div class="ratio ratio-16x9">
+                        <video src="images/Assassins_Creed_Mirage__(getmp3.pro).mp4"  type="video/mp4" id="myVideo" controls allowfullscreen autoplay></video>
+                      </div>
+                      <div class="blog-text my-3 pb-2">
+                        <h3>Eyad Nassar</h3>
+                        <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis neque, laudantium tempora sint dignissimos, aliquid, nostrum quas possimus cupiditate et expedita facere illo saepe alias!</p>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                    <div class="card  first-card">
+                        <img src="images/portfolio/ac-mirage.jpg" class="card-img-top">
+                        <div class="card-body">
+                          <h3 class="card-title text-dark">Assassin Creed Mirage</h3>
+                          <hr class="cards-line">
+                          <p class="card-text fs-6 text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa esse itaque exercitationem. Dolor saepe voluptas delectus nostrum voluptate ea possimus consequatur rerum necessitatibus. Dicta quos blanditiis ad accusantium alias! Quam alias natus at dolorem ullam laborum voluptates dolor dolore,</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- testimonial section -->
+        <div class="scroll-area container-fluid d-flex align-items-center justify-content-center bg-white test">
+            <div class="text-center test-title">
+                
+            </div>
+            <div class="testimonial mySwiper">
+                <h2 class="sec-title text-capitalize text-center mb-5">our testimonial</h2>
+                <div class="testi-content swiper-wrapper mt-5">
+                    <div class="slide text-center swiper-slide">
+                        <img src="images/testimonial/2e73378772e310e3450d41230348a2be-150x150.jpg" alt="test1" class="img-fluid image mb-3">
+                        <p>أعطت الترجمة العربية لهذه اللعبة حقها من التفسير الضروري لفهم ما يجري من حولك وشملت كافة نصوص الحوار والملاحظات والأنشطة وكل ما يخطر في ذهنك، وقد سطعت بتميز في بعض الأحيان أبرزها كان الحياكة الذكية لأنشطة المبارزة الشعرية بطريقة تليق مع قافية اللغة العربية ولو أن ذلك كان مربكًا لرؤيته بعض الشيء (مثلاً عندما تسمع قافية الإنكليزية بأذنك ولكن ترى قافية العربية بعينك) لكنه بات ناجحًا للاستمتاع بالترجمة في نهاية المطاف.</p>
+
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                        <div class="details d-flex justify-content-center my-5">
+                            <span class="test-name text-uppercase">ign</span>
+                        </div>
                     </div>
-                    <div class="col-lg-4 p-3">
-                        <h6 class="fw-bold text-uppercase mb-3">company</h6>
-                        <a class="text-capitalize text-white" href="../pages/privacy-policy.html">privacy policy</a>
-                        <div class="row certficate-footer">
-                            <div class="col-lg-3">
-                                <img src="images/certificates/isi27001-150x150-1.png" class="img-fluid">
-                            </div>
-                            <div class="col-lg-3">
-                                <img src="images/certificates/isi27001-150x150-1.png" class="img-fluid">
-                            </div>
-                            <div class="col-lg-3">
-                                <img src="images/certificates/isi27001-150x150-1.png" class="img-fluid">
+                    <div class="slide text-center swiper-slide">
+                        <img src="images/testimonial/71777775_10162541766185145_4358270200500453376_n-150x150.png" alt="test1" class="img-fluid image mb-3">
+                        <p>بالحديث سريعاً عن الترجمة، فلا شك أن يوبي سوفت واحدة من أهم الشركات التي تدعم المنطقة العربية من حيث الترجمة لألعابها سواء على مستوى القوائم والنصوص ، ولكن الشئ الأكثر إبهاراً أن هناك ترجمة لبعض الـ Texture في اللعبة مثل خريطة التحالف التي تظهر عليها أسماء الممالك في اللعبة باللغة العربية إذا كنت تلعب اللعبة بالعربية وهو من الأمور التي كانت مفاجأة لي على المستوى الشخصي واحببتها كثيراً</p>
+
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                        <div class="details d-flex justify-content-center my-5">
+                            <span class="test-name">ArabHandware</span>
+                        </div>
+                    </div>
+                    <div class="slide text-center swiper-slide">
+                        <img src="images/testimonial/apps.26675.9007199267208845.c3802f61-a921-47f8-b921-941c81fae332.png" alt="test4" class="img-fluid image mb-3">
+                        <p>في النهاية يجب أن نشيد بما قدمته Ubisoft من ناحية التعريب في هذا الجزء فاللعبة معربة بشكل كامل للنصوص والقوائم وليس هذا وحسب فالقوائم في اللغة العربية تظهر من اليمين الى اليسار بشكل مناسب للغتنا وبإتقان مع استخدام خط واضح وجميل وحجم مناسب للنصوص واستخدام مرادفات عربية واضحة سهلة الفهم لتقدم لنا أحد أفضل عمليات التعريب في العاب يوبي سوفت ان لم تكن الأفضل</p>
+
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                        <div class="details d-flex justify-content-center my-5">
+                            <span class="test-name">TrueGaming</span>
+                        </div>
+                    </div>
+                    <div class="slide text-center swiper-slide">
+                        <img src="images/testimonial/download.jpg" alt="test4" class="img-fluid image mb-3">
+                        <p>أما بخصوص تعريب اللعبة و نسخة الشرق الأوسط و شمال افريقيا منها, فاللغة العربية فى هى الأكثر إتقاناَ من الأستوديو , من ناحية إختيار المصطلحات الدقيقة واستخدم خط واضح وبحجم مناسب , بل أن هى أول الألعاب التى تقدم قراءة النصوص صوتيا باللغة العربية , تحية كبيرة لفريق العمل فى على هذا الأنجاز. أما بخصوص محتوى نسخة الشرق الأوسط وشمال إفريقيا, فلم يحذف منها شئ وقد صدرت كما هى دون التعديل عليها</p>
+
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                        <div class="details d-flex justify-content-center my-5">
+                            <span class="test-name">ElderPlayer</span>
+                        </div>
+                    </div>
+                    <div class="slide text-center swiper-slide">
+                        <img src="images/testimonial/71777775_10162541766185145_4358270200500453376_n-150x150.png" alt="test5" class="img-fluid image mb-3">
+                        <p>ان كانت مشكلتك هي اللغة الإنجليزية أو مشكلتك تظهر جلياً مع الألعاب التي تحتاج قراءة مطولة مثل لعبة اليوم فلا تقلق، لقد ذهلت من روعة وإحترافية الطريقة التي تمت بها ترجمة قوائم ونصوص Deathloop والأمر يتعدى فكرة الترجمة الحرفية أو حتى العادية ويشتمل على تحويل بعض المصطلحات الإنجليزية التي لا يوجد لها ترجمة في العادة إلى صيغة عربية دارجة يفهم مغزاها من يقرأها مباشرةً وهي سابقة أول مرة ألاحظها في أي لعبة مترجمة..</p>
+
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                        <div class="details d-flex justify-content-center my-5">
+                            <span class="test-name">ArabHandware</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination mt-5"></div>
+            </div>
+        </div>
+
+        <!-- footer section -->
+        <div class="container-fluid scroll-area text-white bg-white footer-section">
+            <div class="text-center">
+                <h2 class="text-capitalize pt-3 mb-5 text-dark sec-title">our amazing clients</h2>
+            </div>
+                <div class="container text-center">
+                  <div class="row align-items-center">
+                    <div class="col-sm-6 col-md-4 col-lg-2  tech">
+                      <img class="img-fluid w-75" src="images/clients/activision.png" alt="">
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2 my-2 tech">
+                      <img class="img-fluid w-75" src="images/clients/capcom.png" alt="">
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2 my-2 tech">
+                      <img class="img-fluid w-50 mb-2" src="images/clients/ea.png" alt="">
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2  tech">
+                      <img class="img-fluid w-50 mb-2" src="images/clients/epic-games.png" alt="">
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2  tech">
+                      <img class="img-fluid w-75" src="images/clients/square-enix.png" alt="">
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2  tech">
+                      <img class="img-fluid w-50" src="images/clients/ubisoft.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid footer-bottom">
+                    <div class="row mt-5 footer py-3 justify-content-between">
+                        <div class="col-lg-4 fs-6 f-footer" id="f-footer">
+                            <img src="images/arlation-logo.png" alt="demo" class="img-fluid mb-4">
+                            <p>Arlation is a growing service provider in the industry of localization and language</p>
+                            <div class="social-icons d-flex">
+                                <a href="https://www.facebook.com/arlation/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                <a class="ms-3" href="https://twitter.com/arlation1?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                                <a class="ms-3" href="https://www.linkedin.com/company/arlation-llc/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                <a class="ms-3" href="https://www.instagram.com/arlationdmcc/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                              </div>
+                        </div>
+                        <div class="col-lg-3 footer-box fs-6">
+                            <h5 class="mt-3 mb-4">Find Us</h5>
+                            <p class="text-capitalize"><i class="fa-solid fa-location-dot me-2"></i>dubai</p>
+                            <p class="fs-6"><i class="fa-solid fa-phone me-2"></i>
+                                0097143814208</p>
+                            <p><i class="fa-solid fa-box me-2"></i> 57594</p>
+                            <hr class="w-75">
+                            <p class="text-capitalize"><i class="fa-solid fa-location-dot me-2"></i>egypt</p>
+                            <p class="fs-6"><i class="fa-solid fa-phone me-2"></i>+20 10 0909 2266</p>
+                        </div>
+                        <div class="col-lg-2">
+                            <h5 class="mt-3 mb-4">Links</h5>
+                            <ul class="ps-0">
+                                <li class="fs-6 mb-4"><a class="text-white" href="pages/about.html">About</a></li>
+                                <li class="fs-6 mb-4"><a class="text-white" href="pages/portfolio.html">Portfolio</a></li>
+                                <li class="fs-6 mb-4"><a class="text-white" href="pages/services.html">Services</a></li>
+                                <li class="fs-6 mb-4"><a class="text-white" href="pages/contact.html">Contact</a></li>
+                                <li class="fs-6 mb-4"><a class="text-white" href="pages/privacy-policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 fs-6">
+                            <h6 class="fw-bold text-uppercase mt-3 mb-4">company</h6>
+                            <p class="lh-lg mt-3 mb-3">Get in touch with us via mail.</p>
+                            <a href="mailto:info@arlation.com" class="btn rounded-pill main-btn w-75">info@arlation.com</a>
+                            <div class="row mt-5 certficate-footer">
+                                <div class="col-lg-2 col-sm-6 col-md-4">
+                                    <img src="images/certificates/isi27001-150x150-1.png" class="img-fluid  cert">
+                                </div>
+                                <div class="col-lg-2 col-sm-6 col-md-4">
+                                    <img src="images/certificates/isi27001-150x150-1.png" class="img-fluid  cert">
+                                </div>
+                                <div class="col-lg-2 col-sm-6 col-md-4">
+                                    <img src="images/certificates/isi27001-150x150-1.png" class="img-fluid  cert">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <hr>
-                <p class="text-capitalize mb-0 text-center p-2">2023 © Arlation All rights reserved</p>
-            </div>
-        </section>
+            <p class="text-capitalize mb-1 text-center p-2 fs-6 text-dark footer-copyrights">2023 © Arlation All rights reserved</p>
+        </div>
+
+      </div>
 
 
 
-    </div>
 
 
-    <!-- script -->
-    <script src="js/script.js"></script>
-    <!-- bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
     <!-- icons -->
     <script src="https://kit.fontawesome.com/a72b18742e.js" crossorigin="anonymous"></script>
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
-    <!-- aos -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script> -->
+    <!-- swiper -->
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <!-- script -->
+    <script src="js/script.js"></script>
+    
+
     <script>
-        AOS.init();
-      </script>
+        // Get the video element
+        var video = document.getElementById("myVideo");
 
+        // Add an event listener to detect when the user is leaving the page
+        window.addEventListener("load", function() {
+            video.autoplay = false;
+          });
+          
+          window.addEventListener("onscroll", function() {
+            video.pause = true;
+          });
 
-    <!-- hero section counter and images -->
-
-    <script>
-        $(document).ready(function(){
-
-
-
-            $('.img_group').cycle({
-                timeout: 1000
-            });
-        });
-
-        const counterUp = window.counterUp.default
-
-        const callback = entries => {
-        	entries.forEach( entry => {
-        		const el = entry.target
-        		if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
-        			counterUp( el, {
-        				duration: 2200,
-        				delay: 2.7,
-        			} )
-        			el.classList.add( 'is-visible' )
-        		}
-        	} )
-        }
-
-        const IO = new IntersectionObserver( callback, { threshold: 1 } )
-
-        const elements = document.querySelectorAll('.counter');
-        elements.forEach((el) => {
-          IO.observe(el);
-        });
     </script>
-
-
+   
+    
 
 </body>
 </html>
