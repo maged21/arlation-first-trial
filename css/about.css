@@ -150,6 +150,7 @@ body{
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   z-index: 99;
+  display: none !important;
   }
   
   .navbartwo.show {
@@ -464,11 +465,15 @@ body{
   .navbar {
     display: none !important;
   }
+  .site-logo {
+    margin-left: -50px !important;
+  }
   .navbartwo {
-    position: fixed;
+    position:fixed !important;
     padding: 2em !important;
-    left: -32px;
     opacity: 1 !important;
+    display: flex !important;
+    background: rgba(0, 0, 0, 0.2);
   }
 
   .canvas {
@@ -481,6 +486,30 @@ body{
       width: 30% !important;
       display: flex !important;
     }
+
+    .navbartwo {
+      padding: 1em !important;
+    }
+  
+    .navtwo-link a{
+      font-size: 40px;
+    }
+    .navtwo-socials {
+      flex-direction: column;
+    }
+    .navtwo-item-wrapper::after{
+      height: 50px;
+      top: 70px;
+    }
+
+    
+  #header {
+    height: 25vh;
+  }
+  #header h1 {
+    font-size: 30px;
+  }
+  
   }
 
   @media only screen and (max-width: 767px) {

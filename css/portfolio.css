@@ -154,6 +154,7 @@ body{
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   z-index: 99;
+  display: none !important;
   }
   
   .navbartwo.show {
@@ -400,7 +401,7 @@ strong{
   .canvas {
     position: relative;
     display: block;
-    width: 400px;
+    /* width: 400px; */
     height: 400px;
     padding: 20px;
     color: inherit;
@@ -458,7 +459,7 @@ strong{
   
   
   .canvas_copy_title {
-    font-size: 62px;
+    font-size: 40px;
     display: block;
     transform: translateX(-80px);
     transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
@@ -469,18 +470,6 @@ strong{
   }
   .canvas_copy_title:nth-child(2) {
     transition-delay: 0.2s;
-  }
-  
-  .canvas_copy_subtitle {
-    display: block;
-    transform: rotate(270deg) translateY(-100%) translateX(calc(-100% - 80px));
-    transform-origin: top left;
-    position: absolute;
-    left: 0;
-    top: 8px;
-    font-size: 24px;
-    font-weight: 900;
-    transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.35s;
   }
   
   .canvas_copy_details {
@@ -640,15 +629,23 @@ strong{
   .navbar {
     display: none !important;
   }
-  .navbartwo {
-    position: fixed;
-    padding: 2em !important;
-    left: -32px;
-    opacity: 1 !important;
+  .site-logo {
+    margin-left: -50px !important;
   }
-
+  .navbartwo {
+    position:fixed !important;
+    padding: 2em !important;
+    opacity: 1 !important;
+    display: flex !important;
+    background: rgba(0, 0, 0, 0.2);
+  }
   .canvas {
     margin-top: 5rem;
+  }
+
+  .canvas_border {
+    left: 120px;
+    width: 60%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -657,13 +654,18 @@ strong{
   }
   .navbartwo {
     padding: 1em !important;
-    left: -52px;
-    opacity: 1 !important;
+  }
+
+  .navtwo-link a{
+    font-size: 40px;
   }
   .navtwo-socials {
     flex-direction: column;
   }
-
+  .navtwo-item-wrapper::after{
+    height: 50px;
+    top: 70px;
+  }
 
   #header {
     height: 35vh;
@@ -682,6 +684,7 @@ strong{
   }
   .canvas_img-wrapper {
     width: 80%;
+    left: 35px;
   }
 
   .canvas_border svg {

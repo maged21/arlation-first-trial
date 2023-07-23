@@ -420,14 +420,35 @@ body{
   .navbar {
     display: none !important;
   }
+  .site-logo {
+    margin-left: -50px !important;
+  }
   .navbartwo {
-    position: fixed;
+    position:fixed !important;
     padding: 2em !important;
-    left: -32px;
     opacity: 1 !important;
+    display: flex !important;
+    background: rgba(0, 0, 0, 0.2);
   }
 
   .canvas {
     margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbartwo {
+    padding: 1em !important;
+  }
+
+  .navtwo-link a{
+    font-size: 40px;
+  }
+  .navtwo-socials {
+    flex-direction: column;
+  }
+  .navtwo-item-wrapper::after{
+    height: 50px;
+    top: 70px;
   }
 }
