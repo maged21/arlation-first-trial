@@ -44,6 +44,7 @@ body{
   position: relative;
   font-family: 'batman', sans-serif;
   font-size: 40px;
+  margin-bottom: 4rem;
 }
 
 .sec_btn a {
@@ -278,7 +279,7 @@ z-index: 99;
   justify-content: center;
   align-items: center;
   visibility: hidden;
-  z-index: 2;
+  z-index: 10;
 }
 
 .navtwo {
@@ -403,7 +404,7 @@ z-index: 99;
 
   .navtwo-socials {
       flex-direction: row;
-      margin-top: 4em;
+      margin-top: 2em;
   }
 
   .navtwo-socials a {
@@ -786,7 +787,11 @@ z-index: 99;
 /* ----------------------- portfolio */
 .portfolio {
   background: #151515 !important;
+  position: relative;
 }
+
+
+
 .box {
   flex: 1;
   overflow: hidden;
@@ -794,10 +799,11 @@ z-index: 99;
   margin: 0 2%;
   box-shadow: 0 20px 30px rgba(0,0,0,.1);
   line-height: 0;
+  z-index: 2;
 }
 
 .box > img {
-  width: 200%;
+  width: 150%;
   height: calc(100% - 10vh);
   object-fit: cover; 
   transition: .5s;
@@ -1008,11 +1014,17 @@ z-index: 99;
   .scroll-area {
   scroll-snap-type: none;
 }
+.sec-title {
+  margin-bottom: 0;
+}
 .accord-img {
   height: 94%;
 }
 .btn-ser a {
   margin-bottom: 40px !important;
+}
+.accord ul {
+  padding-bottom: 0 !important;
 }
 }
 
@@ -1023,6 +1035,9 @@ z-index: 99;
 }
 .navbar {
   display: none !important;
+}
+.sec-title {
+  margin-bottom: 5rem;
 }
 .site-logo {
   margin-left: -50px !important;
@@ -1053,9 +1068,7 @@ z-index: 99;
 .btn-ser a {
   margin-left: 0 !important;
 }
-.port-btn {
-  margin-top: 180px;
-}
+
 #f-footer {
   padding-left: 9px !important;
 }
@@ -1092,6 +1105,9 @@ z-index: 99;
     scroll-snap-type: none;
   }
 
+  .sec-title {
+    margin-bottom: 3rem;
+  }
   .navbartwo {
     padding: 0em 0.5em !important;
   }
@@ -1104,12 +1120,12 @@ z-index: 99;
   }
   .navtwo-item-wrapper::after{
     height: 50px;
-    top: 70px;
   }
 
   .box {
     flex-basis: 50%; 
     margin: 10px;
+    pointer-events: none !important;
   }
 
   .box > img {
@@ -1121,13 +1137,6 @@ z-index: 99;
     display: none;
   }
 
-  .box:hover {
-    pointer-events:fill; 
-  }
-
-  .box:hover > img {
-    /* transform: scale(1) */
-  }
 
     
   .hero-section h1 {
@@ -1220,12 +1229,18 @@ z-index: 99;
 }
 
 @media screen and (max-width: 400px) {
+  .sec-title {
+    font-size: 25px;
+  }
   .hero-section h1 {
     font-size: 25px;
     letter-spacing: 0.2em !important;
     margin-top: 30px;
   }
-
+  
+  .title {
+    margin-top: 4rem;
+  }
   .about-text h1 {
     font-size: 30px;
   }
@@ -1254,16 +1269,21 @@ z-index: 99;
   .blog-text p{
     font-size: 12px !important;
   }
-
-  .card {
+  .port-section {
+    padding: 50em !important;
+  }
+  .box:nth-last-child(1) {
+    margin-bottom: 5rem;
+  }
+  .box > img {
+    height: 100px;
+  }
+  .port-btn {
+    /* margin-top: 5rem !important; */
+  }
+  .box:last-child {
+    margin-bottom: 10rem !important;
     display: none !important;
-  }
-  .card-body h3{
-    font-size: 13px;
-  }
-
-  .card-body p {
-    font-size: 13px !important;
   }
 
   .accord ul {
