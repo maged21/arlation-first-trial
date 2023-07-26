@@ -573,6 +573,14 @@ body{
     padding: 1em !important;
   }
 
+  .up {
+    font-size: 15px;
+    padding: 13px;
+  }
+  .up.show {
+    right: 20px;
+  }
+  
   .navtwo-link a{
     font-size: 40px;
   }

@@ -486,7 +486,13 @@ body{
       width: 30% !important;
       display: flex !important;
     }
-
+    .up {
+      font-size: 15px;
+      padding: 13px;
+    }
+    .up.show {
+      right: 20px;
+    }
     .navbartwo {
       padding: 1em !important;
     }

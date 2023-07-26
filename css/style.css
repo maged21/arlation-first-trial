@@ -498,7 +498,7 @@ z-index: 99;
   color: #000 !important;
   position: relative;
 }
-#about-ustwo{
+.about-ustwo{
   background:#151515 !important;
   position: relative;
 }
@@ -540,7 +540,7 @@ z-index: 99;
   opacity: 0.1;
 }
 
-#about-ustwo  h1 {
+.about-ustwo  h1 {
   color: #fff;
 }
 #about-ustwo .icon-holder .icon{
@@ -1123,6 +1123,13 @@ z-index: 99;
     scroll-snap-type: none;
   }
 
+  .up {
+    font-size: 15px;
+    padding: 13px;
+  }
+  .up.show {
+    right: 20px;
+  }
   .sec-title {
     margin-bottom: 3rem;
   }
