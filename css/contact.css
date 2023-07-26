@@ -329,7 +329,7 @@ body{
 
 /* ---------------- contact */
 #contact {
-  background: url(../images/contact-us.png);
+  background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../images/subtle-prism2.png);
 }
 .contact-btn {
   background-color: #1d1e22 !important;
