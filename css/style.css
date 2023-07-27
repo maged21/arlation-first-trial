@@ -404,7 +404,7 @@ z-index: 99;
 
   .navtwo-socials {
       flex-direction: row;
-      margin-top: 2em;
+      margin-top: 1em;
   }
 
   .navtwo-socials a {
@@ -543,7 +543,7 @@ z-index: 99;
 .about-ustwo  h1 {
   color: #fff;
 }
-#about-ustwo .icon-holder .icon{
+.about-ustwo .icon-holder .icon{
   right: -20px;
   top: -35%;
   color: #2fbced;
@@ -553,7 +553,7 @@ z-index: 99;
   margin-top: 5rem !important;
 }
 .counter-box {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 1%;
   margin-top: 2rem;
 }
@@ -794,13 +794,13 @@ z-index: 99;
   overflow: hidden;
   transition: .5s;
   margin: 0 2%;
-  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  /* box-shadow: 0 20px 30px rgba(0,0,0,.1); */
   line-height: 0;
   z-index: 2;
 }
 
 .box > img {
-  width: 150%;
+  width: 100%;
   height: calc(100% - 10vh);
   object-fit: cover; 
   transition: .5s;
@@ -814,7 +814,7 @@ z-index: 99;
   line-height: 2.6;
 }
 
-.box:hover { flex: 1 1 50%; }
+.box:hover { flex: 1 1 40%; }
 .box:hover > img {
   width: 100%;
   height: 100%;
@@ -1015,35 +1015,46 @@ z-index: 99;
   .scroll-container,
   .scroll-area {
   scroll-snap-type: none;
-}
-.up{
-  font-size: 10px;
-  padding: 8px;
-}
-.hero-section h1 {
-  font-size: 50px;
-}
+  }
+  .up{
+    font-size: 10px;
+    padding: 8px;
+  }
+  .hero-section h1 {
+    font-size: 50px;
+  }
 
-.hero-section p {
-  font-size: 20px;
-}
-.sec-title {
-  margin-bottom: 0;
-  font-size: 30px;
-}
-
-.about-text h1 {
-  font-size: 40px;
-}
-.accord-img {
-  height: 94%;
-}
-.btn-ser a {
-  margin-bottom: 40px !important;
-}
-.accord ul {
-  padding-bottom: 0 !important;
-}
+  .hero-section p {
+    font-size: 20px;
+  }
+  .sec-title {
+    margin-bottom: 0;
+    font-size: 30px;
+  }
+  .service .sec_btn-ser{
+    margin-top: -40px;
+  }
+  .about-text h1 {
+    font-size: 40px;
+  }
+  .accord-img {
+    height: 94%;
+  }
+  .btn-ser a {
+    margin-bottom: 40px !important;
+  }
+  .accord ul {
+    padding-bottom: 0 !important;
+  }
+  .accord-body {
+    padding-top: 0 !important;
+  }
+  .accord-body p {
+    margin-bottom: 0 !important;
+  }
+  .portfolio .sec-title {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1086,7 +1097,15 @@ z-index: 99;
 .btn-ser a {
   margin-left: 0 !important;
 }
-
+.accord-body {
+  padding-top: 15px !important;
+}
+.accord-body p {
+  margin-bottom: 1rem !important;
+}
+.service .sec_btn-ser{
+  margin-top: 0;
+}
 #f-footer {
   padding-left: 9px !important;
 }
@@ -1197,6 +1216,10 @@ z-index: 99;
     display: none !important;
   }
   
+  .accord-body {
+    padding-top: 0 !important;
+  }
+
 
   .tech {
     width: 50% !important;
@@ -1322,6 +1345,13 @@ z-index: 99;
 
   .testimonial .slide p {
     font-size: 14px;
+  }
+
+  .testimonial img {
+    width: 30% !important;
+  }
+  .testimonial p{
+    margin-bottom: -20px !important;
   }
 } 
 
