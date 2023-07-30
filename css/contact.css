@@ -29,6 +29,31 @@ body{
     color: var(--white) !important;
 }
 
+/* up */
+
+.up{
+  color: #143f90;
+  position: fixed;
+  bottom: 30px;
+  right: -70px;
+  font-size: 22px;
+  padding: 15px;
+  border-radius: 20%;
+  border: 2px solid #143f90;
+  cursor: pointer;
+  transition: .4s;
+  z-index: 1;
+}
+
+.up:hover{
+  background: #143f90;
+  color: #f4fffe;
+}
+.up.show {
+  right: 20px;
+}
+
+
 /* --------------- nav */
 .navbar-brand img{
     width: 67px !important;
@@ -330,6 +355,9 @@ body{
 /* ---------------- contact */
 #contact {
   background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../images/subtle-prism2.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 .contact-btn {
   background-color: #1d1e22 !important;
@@ -363,58 +391,85 @@ body{
 
 
 
-
-
-
 /* --------------- footer */
 #footer{
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/Blue\ Pink\ Simple\ Gaming\ Desktop\ Wallpaper\ \(1\).png);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    color: #f4fffe;
-  }
-
-  .custom-shape-divider-top-1684329036 {
-    position: relative;
-    margin-bottom: 40px;
-   }
-   
-   .custom-shape-divider-top-1684329036 svg {
-     position: absolute;
-     top: -48px !important;
-   }
-   
-   .custom-shape-divider-top-1684329036 .shape-fill {
-     fill: var(--bg) !important;
-   }
-   
+  background: #1d1e22 !important;
+}
+ 
 .social-icons a{
-    display: flex;
-    align-items: center !important;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    color: #f4fffe;
-    text-decoration: none;
-    font-size: 20px;
-    transition: .5s;
-  }
-  .social-icons a:hover{
-    transform: scale(1.4);
-    background-color: transparent;
-    border: 2px solid #143f90;
-    color: #2fbced;
-    transition: .5s;
-    cursor: pointer;
-  }
-  
-  
-  .certficate-footer img{
-    width: 100px;
-    margin-top: 40px;
-  }
+  display: flex;
+  align-items: center !important;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: #f4fffe;
+  text-decoration: none;
+  font-size: 20px;
+  transition: .5s;
+}
+.social-icons a:hover{
+  transform: scale(1.4);
+  background-color: transparent;
+  border: 2px solid #143f90;
+  color: #2fbced;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.link{
+  position: relative;
+}
+.link::after{
+  position: absolute;
+  content: '';
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #0075ff !important;
+  transition: 0.5s;
+}
+
+.link:hover::after{
+  width: 100%;
+  transition: 0.5s;
+}
+.main-btn{
+  background: linear-gradient(94deg, #0075ff 0%, #143f90 100%);
+  color: #f4fffe !important;
+  transition: 0.5s;
+}
+.main-btn:hover{
+  background: transparent;
+  color: white;
+  transition: 0.5s;
+  border: 1px solid #2fbced !important;
+}
+
+.footer-box i {
+  color: #2fbced;
+}
+
+.certficate-footer img{
+  width: 100px;
+  margin-top: 40px;
+}
+
+.copyrights {
+  position: relative;
+  padding: 1rem !important;
+}
+
+.copyrights::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, transparent, #f4fffe, transparent);
+}
 
   
 @media screen and (max-width: 1200px){
@@ -438,6 +493,18 @@ body{
 }
 
 @media screen and (max-width: 600px) {
+  #contact {
+    margin-top: 5rem;
+  }
+
+  .up {
+    font-size: 15px;
+    padding: 13px;
+  }
+  .up.show {
+    right: 20px;
+  }
+  
   .navbartwo {
     padding: 1em !important;
   }
@@ -451,5 +518,10 @@ body{
   .navtwo-item-wrapper::after{
     height: 50px;
     top: 70px;
+  }
+
+  .certficate-footer img{
+    width: 30% !important;
+    display: flex !important;
   }
 }

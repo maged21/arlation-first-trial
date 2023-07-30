@@ -540,6 +540,23 @@ body{
   margin-top: 40px;
 }
 
+.copyrights {
+  position: relative;
+  padding: 1rem !important;
+}
+
+.copyrights::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, transparent, #f4fffe, transparent);
+}
+
+
+
 @media screen and (max-width: 1366px) {
   .up{
     font-size: 10px;

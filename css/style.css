@@ -498,6 +498,7 @@ z-index: 99;
   color: #000 !important;
   position: relative;
 }
+
 .about-ustwo{
   background:#151515 !important;
   position: relative;
@@ -556,6 +557,10 @@ z-index: 99;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 1%;
   margin-top: 2rem;
+}
+
+.counter-box p {
+  margin-bottom: 0 !important;
 }
 
 .counter-box .blue {
@@ -906,7 +911,7 @@ z-index: 99;
   color: #f4fffe;
 }
 #f-footer {
-  padding-left: 8.1rem !important;
+  padding-left: 5rem !important;
 }
 
 .footer-section {
@@ -1052,9 +1057,18 @@ z-index: 99;
   .accord-body p {
     margin-bottom: 0 !important;
   }
+
+  .accord-item{
+    padding-bottom: 0px !important;
+  }
   .portfolio .sec-title {
     margin-bottom: 60px;
   }
+  .box:hover { flex: 1 1 25%; }
+  .box:hover > img {
+  width: 100%;
+  height: 100%;
+}
 }
 
 @media screen and (max-width: 1200px) {
@@ -1094,6 +1108,10 @@ z-index: 99;
 .accord-bl {
   right: 10px;
 }
+.accord-body {
+  padding-top: 0 !important;
+}
+
 .btn-ser a {
   margin-left: 0 !important;
 }
@@ -1125,6 +1143,11 @@ z-index: 99;
   left: 0;
   right: 0;
 }
+.certficate-footer .cert {
+  width: 20% !important;
+  margin-top: 30px;
+}
+
 }
 @media screen and (max-width: 1000px) {
 
@@ -1181,7 +1204,9 @@ z-index: 99;
     display: none;
   }
 
-
+  #about-us{
+    padding-bottom: 30px !important;
+  }
     
   .hero-section h1 {
     font-size: 38px;
@@ -1326,9 +1351,7 @@ z-index: 99;
   .box > img {
     height: 100px;
   }
-  .port-btn {
-    /* margin-top: 5rem !important; */
-  }
+
   .box:last-child {
     margin-bottom: 10rem !important;
     display: none !important;
